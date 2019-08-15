@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LeadEC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+<style>
+    head
+    {
+        overflow: hidden;
+    }
+    body
+    {
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100vh;
+    }
+    }
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Courier New', Courier, monospace';
+    }
+    .row:before,.epm_hdr_sec:before
+    {
+        content: '';
+        display: table;
+    }
+    .row:after,.epm_hdr_sec:after
+    {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .epm_hdr_sec
+    {
+    height:55px;
+    border-bottom:2px solid #f29400;
+    display: block;
+    padding: 10px 30px;
+    background-color: #fff;
+    }
+    
+    .pull-left
+    {float:left;}
+    .pull-right
+    {
+        float:right;
+    }
+    .erp-main-hdr-lbl
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #04378b;
+        font-size: 40px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        line-height: 35px;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .erp-main-hdr-lbl span
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #f29400;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 25px;
+        margin: 0px 0px 0px 5px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    
+.erp-in-bdy-sec
+{
+    position: relative;
+    padding: 20px 20px;
+    display: block;
+}
+
+.erp-main-master-center-panel
+{
+    box-shadow: 0 0px 0px rgba(0,0,0,0.16), 0 0px 5px rgba(0,0,0,0.23);
+    width: 650px;
+    min-height: 410px;
+    padding: 20px 35px;
+    display: block;
+    margin: 0px auto;
+}
+.erp-login-out-icon
+    {background-color: #04378b;height: 25px;width: 25px;margin: 5px 0px 0px 0px;padding: 0px 9px;border-radius:50px !important;display: block;line-height: 20px;}
+    .erp-login-out-icon i
+    {
+        color:#fff;
+        font-size: 13px;
+    }
+
+    /*Bdy Sec*/
+.erp-master-click-nav-list
+{
+    margin:0px;
+    padding:0px;
+}
+.erp-master-click-nav-list li
+{
+    float:left;
+    display: block;
+    list-style: none;
+    width: 33.333%;
+}
+.erp-master-click-nav-list li a
+{
+    position: relative;
+    padding:10px 10px;
+    display: block;
+    height: 150px;
+    margin: 10px 10px 10px 10px;
+    /* width: 150px; */
+    border:1px solid #ddd;
+    font-size:14px;
+    /* color:#fff;
+    background-color:#04378b; */
+    border-radius: 5px !important;
+}
+
+
+
+
+.erp-master-click-nav-list li a:hover{
+    background-color:#f8fdff;
+}
+
+.erp-master-click-nav-list li a span{
+    border-radius: 50px !important;
+    margin:0px auto;
+    height: 70px;
+    width: 70px;
+    display: block;
+    padding: 15px 15px;
+}
+.erp-master-click-nav-list li a span img{height: 40px;width: 40px;}
+.erp-master-click-nav-list li a h1
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.2px;
+}
+.erp-master-img-bg-s1
+{background-color: #00e5ff;}
+.erp-master-img-bg-s2
+{background-color: #ff1f4a;}
+.erp-master-img-bg-s3
+{background-color: #1de9b6;}
+.erp-master-img-bg-s4
+{background-color: #ffea00;}
+.erp-master-img-bg-s5
+{background-color: #616161;}
+.erp-master-select-cust
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    border-radius: 3px !important;
+    font-size: 14px;
+    color: #5d5d5d;
+    display: block;
+    padding: 7px 15px;
+    width: 325px;
+    margin: 0px 10px 10px 25px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.erp-master-select-cust:focus
+{
+    outline: none;
+}
+.erp-lbl-hdr-s1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f0902b;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.erp-lbl-hdr-s1 span{
+    color: #004c8a;
+    font-size: 30px;
+}
+.erp-lbl-hdr-s1::before{
+    content: '';
+    position: absolute;
+    margin:0px auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    border-bottom:2px solid #ddd;
+    margin-top: 30px;
+}
+.erp-li-widt-50per
+{
+    width:50% !important;
+}
+</style>
+
+<div class="epm_hdr_sec">
+        <div class="row">
+        <div class="pull-left">
+            <h3 class="erp-main-hdr-lbl">LeadEC<span>Industrial Service</span></h3>
+        </div>
+        <div class="pull-right">
+        <a class="erp-login-out-icon" href="ERPLogin.html" title="Log Out"><i class="fa fa-sign-out"></i></a>
+        
+        </div>
+        </div>
+        
+        </div>
+    </head>
+<body>
+      
+<div class="erp-in-bdy-sec">
+ <div class="erp-main-master-center-panel">
+     <h3 class="erp-lbl-hdr-s1"><span>U</span>ser <span>M</span>aster</h3>
+ <ul class="erp-master-click-nav-list">
+            <li class="erp-li-widt-50per"><a href="PIfUser.html">
+                    <span class="erp-master-img-bg-s3"><img src="/home/oracle/Desktop/Source/img/PRF.png"></span>
+                    <h1>PRF</h1></a></li>
+
+                    <li  class="erp-li-widt-50per" style="margin-bottom:50px;"><a href="CheckMemoUser.html">
+                            <span class="erp-master-img-bg-s4"><img src="/home/oracle/Desktop/Source/img/CheckMemo.png"></span>
+                            <h1>Check MEMO</h1></a></li>
+                            
+</ul> 
+<div class="row">
+<select class="erp-master-select-cust">
+<option value="0">-Choose Expenses</option>
+<option value="1">Tour Expenses</option>
+<option value="2">Petrol Expenses</option>
+<option value="3">Material Expenses</option>
+
+</select>
+
+</div>
+ </div>  
+
+
+</div>
+</body>
+</html>

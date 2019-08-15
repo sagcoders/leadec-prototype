@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LeadEC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+<style>
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Courier New', Courier, monospace';
+    }
+    .erp-sign-in-but
+    {
+        border: none;
+    outline: none;
+    height: 30px;
+    color: #fff !important;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px auto;
+    display: block;
+    background-color: #04378b;
+    cursor: pointer;
+    border-radius: 20px;
+    line-height: 30px
+    }
+    .erp-sign-in-but:hover{
+        background-color: #f29400;
+        color: #fff;
+    }
+    .mar-top-50
+    {
+        margin-top:50px;
+    }
+    }
+    .row:before,.erp-login-frm-par-con-s1:before,.erp-login-frm-grp:before,.erp-login-frm-bdy:before
+    {
+        content: '';
+        display: table;
+    }
+    .row:after,.erp-login-frm-par-con-s1:after,.erp-login-frm-grp:after,.erp-login-frm-bdy:after
+    {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .erp_login_bdy
+    {
+        background-color: #fff;
+    }
+    .erp-login-frm-par-con-s1
+    {
+        position: relative;
+        display: block;
+        padding: 50px 20px;
+    }
+    
+    .erp_login-lbl-s1
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #909090;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 25px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .erp_login-lbl-s2
+    {
+        overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    color: #B8B9BB;
+    font-size: 12px;
+    display: block;
+    font-weight: 300;
+    line-height: 14px;
+    margin: 10px 0px 50px 0px;
+    text-align: center;
+    font-family: monospace;
+    }
+    .erp-login-log
+    {
+        height: 95px;
+    /* width: 100px; */
+    display: block;
+    margin: 0px auto;
+    }
+    .erp-login-frm-bdy
+    {
+    position: relative;
+    padding: 0px 100px;
+    }
+    .erp-pos-abs-back-but
+    {
+        position: absolute;
+    right: 0px;
+    top: 10px;
+    color: #fff;
+    background-color: #004c8a;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50px !important;
+    line-height: 20px;
+    }
+    .erp-pos-abs-back-but:hover{
+        cursor: pointer; 
+        background-color:#f0902b;
+    }
+    .erp-login-frm-grp
+    {
+    position: relative;
+margin-bottom: 20px;
+    }
+    .erp-login-frm-par-con-s2{
+    border:1px solid #ddd;
+    border-radius: 50px !important;
+    padding: 5px 10px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    .erp-frm-cust-icon-s1
+    {
+    color: #b7b7b7;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 17px;
+    }
+
+    .erp-frm-cust-icon-s2
+{
+    color: #b7b7b7;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 17px;
+}
+
+    .erp-login-frm-par-con-s2 input
+        {
+            width: 100%;
+            padding: 0px 5px 0px 0px;
+            font-size: 15px;
+            color: #aaaaaa;
+            /* margin-bottom: 20px; */
+            border: none;
+            outline: none;
+        }
+        
+        .erp_login_center-par_bdy_con-s1 {
+    position: relative;
+    padding: 10px 50px;
+}
+.erp_login_center-par_bdy_con-s1 input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 30px;
+            color: #fff;
+            width: 150px;
+            font-size: 16px;
+            margin: 0px auto;
+            display: block;
+            background-color: #04378b;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .erp_login_center-par_bdy_con-s1 input[type="submit"]:hover
+        {
+            background-color: #f29400;
+            color: fff;
+        }
+        .erp_login_center-par_bdy_con-s1 input
+        {
+            width: 100%;
+            margin-bottom: 20px !important;
+        }
+
+
+
+        .erp-lbl-redirect-s1
+        {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #464444;
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 10px;
+            margin: 0px 0px 0px 0px;
+            text-align: center;
+        }
+        .erp-lbl-redirect-s1 span a
+        {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #f29400;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+            margin: 0px 0px 0px 0px;
+            text-align: center;
+        }
+        .erp-lbl-redirect-s1 span:hover a
+        {
+            text-decoration: underline;
+        }
+       
+
+
+
+        .erp-social-media-icon-nav-s1
+        {
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .erp-social-media-icon-nav-s1 li
+        {
+            display: block;
+            width: 33.33%;
+            float: left;
+            list-style: none;
+        }
+        .erp-social-media-icon-nav-s1 li a
+        {
+            padding: 0px 3px;
+            display: block;
+            text-align: center;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+            line-height: 20px;
+            margin: 0px auto;
+            border-radius: 50px !important;
+            border: 1px solid #ddd;
+        }
+        .erp-social-media-icon-nav-s1 li a i
+        {
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .erp_soc_med_fb_clr i
+        {
+            color: #3B5998;
+        }
+        .erp_soc_med_fb_clr:hover
+        {
+            background-color: #3B5998;
+            border: 1px solid #3B5998;
+        }
+        .erp_soc_med_fb_clr:hover i
+        {
+            color: #fff;
+        }
+        .erp_soc_med_twit_clr i
+        {
+            color: #1DA1F2;
+        }
+        .erp_soc_med_twit_clr:hover
+        {
+            background-color: #1DA1F2;
+            border: 1px solid #1DA1F2;
+        }
+        .erp_soc_med_twit_clr:hover i
+        {
+            color: #fff;
+        }
+        .erp_soc_med_gplus_clr i
+        {
+            color: #DB4437;
+        }
+        .erp_soc_med_gplus_clr:hover
+        {
+            background-color: #DB4437;
+            border: 1px solid #DB4437;
+        }
+        .erp_soc_med_gplus_clr:hover i
+        {
+            color: #fff;
+        }
+        
+
+
+       .erp_login_bnner_img
+       {
+        position: relative;
+        /* opacity: 0.4; */
+       }
+       .erp_login_bnner_img img{
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.4;
+        background-image: re
+    object-fit: cover;
+       }
+       .erp-lbl-img-focus
+       {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #ffffff;
+        position: absolute;
+        font-size: 50px;
+        transform: translate(-50%,-50%);
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 0px;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+       }
+       .erp-lbl-img-focus span{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 10px;
+        display: block;
+        margin: -10px 0px 0px 0px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+       }
+</style>
+</head>
+<body class="erp_login_bdy">
+    <div class="row">
+    <div class="col-md-6 col-sm-12">
+
+    <div class="erp-login-frm-par-con-s1">
+        
+<h3 class="erp_login-lbl-s1">Welcome To</h3>
+<img src="/home/oracle/Desktop/Source/img/LeadTech_logo.png" class="erp-login-log">
+<h3 class="erp_login-lbl-s2">Log in to get in the moment update in the things that interest you </h3>
+<div class="tab-content">
+        <div class="tab-pane fade  active in" id="mainPage">
+                <div class="row">
+                        
+                        <div class="erp_login_center-par_bdy_con-s1">
+                                <input type="submit" name="" value="Admin" href="#Admin_signin" data-toggle="tab">
+                                
+                            </div>
+                            <div class="erp_login_center-par_bdy_con-s1">
+                                    <input type="submit" name="" value="User" href="#User_signin" data-toggle="tab">
+                                    
+                                </div>
+                            <div class="row mar-top-50">
+                        
+                                    <ul class="erp-social-media-icon-nav-s1">
+                                            <li><a class="erp_soc_med_fb_clr" href="https://www.facebook.com/"><i class="fa fa-facebook-f " title="Sign Up With Facebok"></i></a></li>
+                                            <li><a class=" erp_soc_med_twit_clr" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter" title="Sign Up With Twitter"></i></a></li>
+                                            <li><a class="erp_soc_med_gplus_clr"><i class="fa fa-google-plus " title="Sign Up With Google Plus"></i></a></li>
+                                        </ul>
+                            </div>
+                            
+                        </div>
+        </div>
+
+<div class="tab-pane fade in" id="Admin_signin">
+        <div class="row"><i class="fa fa-arrow-left erp-pos-abs-back-but" data-toggle="tab" href="#mainPage" title="Back to Login"></i>
+                <div class="erp-login-frm-bdy">
+                <div class="erp-login-frm-grp">
+                <div class="erp-login-frm-par-con-s2">
+                <i class="fa fa-user erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter Admin Name" placeholder="Enter Admin Name" required="">
+                
+                </div>
+                
+                </div>
+                <div class="erp-login-frm-grp">
+                        <div class="erp-login-frm-par-con-s2">
+                        <i class="fa fa-lock erp-frm-cust-icon-s1"></i><input type="password" name="" required="" id="password-field" value="secret" required="">
+                        <i class="fa fa-fw fa-eye field-icon toggle-password erp-frm-cust-icon-s2" toggle="#password-field"></i>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                </div>
+                <div class="erp_login_center-par_bdy_con-s1">
+                        <!-- <input type="submit" name="" value="Sign In" href="#" data-toggle="tab"> -->
+                        <a class="erp-sign-in-but" href="AdminMainMaster.html">Sign In</a>
+                    </div>
+                    <div class="row">
+                
+                            <ul class="erp-social-media-icon-nav-s1">
+                                    <li><a class="erp_soc_med_fb_clr" href="https://www.facebook.com/"><i class="fa fa-facebook-f " title="Sign Up With Facebok"></i></a></li>
+                                    <li><a class=" erp_soc_med_twit_clr" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter" title="Sign Up With Twitter"></i></a></li>
+                                    <li><a class="erp_soc_med_gplus_clr"><i class="fa fa-google-plus " title="Sign Up With Google Plus"></i></a></li>
+                                </ul>
+                    </div>
+                    <!-- <div class="row">
+                            <h3 class="erp-lbl-redirect-s1">
+                                    Don't have an account? <span><a href="userRegistry.html">Register for User</a></span>
+                                </h3>
+                
+                    </div> -->
+                </div>
+</div>
+<div class="tab-pane fade in" id="User_signin"><i class="fa fa-arrow-left erp-pos-abs-back-but" data-toggle="tab" href="#mainPage" title="Back to Login"></i>
+        <div class="row">
+                <div class="erp-login-frm-bdy">
+                <div class="erp-login-frm-grp">
+                <div class="erp-login-frm-par-con-s2">
+                <i class="fa fa-user erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter User Name" placeholder="Enter User Name" required="">
+                
+                </div>
+                
+                </div>
+                <div class="erp-login-frm-grp">
+                        <div class="erp-login-frm-par-con-s2">
+                        <i class="fa fa-lock erp-frm-cust-icon-s1"></i><input type="password" name="" required="" id="password-field" value="secret" required="">
+                        <i class="fa fa-fw fa-eye field-icon toggle-password erp-frm-cust-icon-s2" toggle="#password-field"></i>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                </div>
+                <div class="erp_login_center-par_bdy_con-s1">
+                        <!-- <input type="submit" name="" value="Sign In" href="UserMainMaster.html" > -->
+                        <a class="erp-sign-in-but" href="UserMainMaster.html">Sign In</a>
+                    </div>
+                    <div class="row">
+                
+                            <ul class="erp-social-media-icon-nav-s1">
+                                    <li><a class="erp_soc_med_fb_clr" href="https://www.facebook.com/"><i class="fa fa-facebook-f " title="Sign Up With Facebok"></i></a></li>
+                                    <li><a class=" erp_soc_med_twit_clr" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter" title="Sign Up With Twitter"></i></a></li>
+                                    <li><a class="erp_soc_med_gplus_clr"><i class="fa fa-google-plus " title="Sign Up With Google Plus"></i></a></li>
+                                </ul>
+                    </div>
+                   
+                    
+                </div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+    <div class="col-md-6 hidden-sm">
+<div class="erp_login_bnner_img">
+
+        <img src="/home/oracle/Desktop/Source/img/login_banner2.jpg">
+        <h3 class="erp-lbl-img-focus">Leadec<span>Industrial Service</span></h3>
+</div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(".toggle-password").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+    $(".toggle-password-s1").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+    //        function pageRedirect() {
+    //            window.location.replace("");
+    //        }
+    //        setTimeout("pageRedirect()", 1000);
+</script>
+</body>
+</html>

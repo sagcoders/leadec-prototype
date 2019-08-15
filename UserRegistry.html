@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LeadEC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+<style>
+    head
+    {
+        overflow: hidden;
+    }
+    body
+    {
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100vh;
+    }
+    
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Courier New', Courier, monospace';
+    }
+    .row:before,.epm_hdr_sec:before
+    {
+        content: '';
+        display: table;
+    }
+    .row:after,.epm_hdr_sec:after
+    {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .epm_hdr_sec
+    {
+    height:55px;
+    border-bottom:2px solid #f29400;
+    display: block;
+    padding: 10px 30px;
+    background-color: #fff;
+    }
+    .epm_hdr_sec img
+    {
+
+    }
+    .pull-left
+    {float:left;}
+    .pull-right
+    {
+        float:right;
+    }
+    .erp-main-hdr-lbl
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #04378b;
+        font-size: 40px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        line-height: 35px;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .erp-main-hdr-lbl span
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #f29400;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 25px;
+        margin: 0px 0px 0px 5px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .erp-login-out-icon
+    {background-color: #04378b;height: 25px;width: 25px;margin: 5px 0px 0px 0px;padding: 0px 9px;border-radius:50px !important;display: block;line-height: 20px;}
+    .erp-login-out-icon i
+    {
+        color:#fff;
+        font-size: 13px;
+    }
+    .erp-login-frm-grp {
+    position: relative;
+    margin-bottom: 20px;
+}.mar-top-15 {
+    margin-top: 15px;
+    display: -webkit-box;
+}
+
+.erp-foot-cont {
+    background-color: #efefef;
+    padding: 10px 10px;
+    display: block;
+    min-height: 45px;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    width: 100%;
+}
+.erp-foot-cancel-but
+    {
+        border: none;
+        outline: none;
+        height: 25px;
+        color: #fff !important;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        float: right;
+        margin: 0px auto;
+        display: inline-block;
+        background-color: #b3b3b3;
+        cursor: pointer;
+        border-radius: 20px;
+        line-height: 25px;
+    }
+    .erp-foot-save
+    {
+        border: none;
+        outline: none;
+        height: 25px;
+        color: #fff !important;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px auto;
+        float: right;
+        display: inline-block;
+        background-color: #04378b;
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 0px 10px 0px 10px;
+        line-height: 25px;
+    }
+    .erp-foot-cancel-but:hover
+    {
+background-color: gray;
+    }.erp-foot-save:hover
+    {
+background-color:#f29400;
+    }
+    
+
+.erp-login-frm-par-con-s2 {
+    border: 1px solid #ddd;
+    border-radius: 50px !important;
+    padding: 5px 10px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.erp-login-frm-par-con-s2 input {
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+    font-size: 15px;
+    color: #aaaaaa;
+    /* margin-bottom: 20px; */
+    border: none;
+    outline: none;
+}
+.erp-frm-cust-icon-s1 {
+    color: #b7b7b7;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    font-size: 17px;
+}
+.erp-in-bdy-sec
+{
+    position: relative;
+    padding: 20px 20px;
+    display: block;
+}
+.erp-login-frm-par-con-s1{position: relative;display: -webkit-box;}
+.erp-lbl-hdr-s1
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #04378b;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0px 0px 20px 0px;
+}
+</style>
+
+<div class="epm_hdr_sec">
+        <div class="row">
+        <div class="pull-left">
+            <h3 class="erp-main-hdr-lbl">LeadEC<span>Industrial Service</span></h3>
+        </div>
+        <div class="pull-right">
+        <a class="erp-login-out-icon" href="AdminMainMaster.html" title="Log Out"><i class="fa fa-sign-out"></i></a>
+        
+        </div>
+        </div>
+        
+        </div>
+    </head>
+<body>
+      
+<div class="erp-in-bdy-sec">
+    <h3 class="erp-lbl-hdr-s1">User Resiter Form</h3>
+<div class="erp-login-frm-par-con-s1">
+        <div class="col-md-4">
+        <div class="erp-login-frm-grp">
+
+        
+                <div class="erp-login-frm-par-con-s2">
+                <i class="fa fa-user erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter Employee Id" placeholder="Enter Admin Name" required="">
+                
+                </div>
+                
+                </div>
+                <div class="erp-login-frm-grp">
+
+        
+                        <div class="erp-login-frm-par-con-s2">
+                        <i class="fa fa-user erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter First Name" required="">
+                        
+                        </div>
+                        
+                        </div>      
+
+                        <div class="erp-login-frm-grp">
+
+        
+                                <div class="erp-login-frm-par-con-s2">
+                                <i class="fa fa-user erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter Last Name" required="">
+                                
+                                </div>
+                                
+                                </div>   
+                                
+                                <div class="erp-login-frm-grp">
+
+        
+                                        <div class="erp-login-frm-par-con-s2">
+                                        <i class="fa fa-envelope   erp-frm-cust-icon-s1"></i><input type="text" class="" value="Enter Mail Id" required="">
+                                        
+                                        </div>
+                                        
+                                        </div>    
+                                        
+                                        <div class="erp-login-frm-grp">
+
+        
+                                                <div class="erp-login-frm-par-con-s2">
+                                                <i class="fa fa-key erp-frm-cust-icon-s1"></i><input type="password" class="" value="Enter Password" required="">
+                                                
+                                                </div>
+                                                
+                                                </div>  
+                                                
+                                                <div class="erp-login-frm-grp">
+
+        
+                                                        <div class="erp-login-frm-par-con-s2">
+                                                        <i class="fa fa-key erp-frm-cust-icon-s1"></i><input type="password" class="" value="Enter Confirm Password" required="">
+                                                        
+                                                        </div>
+                                                        
+                                                        </div> 
+</div>
+
+
+
+</div>
+<div class="mar-top-15">
+        <div class="erp-foot-cont">
+                <a class="erp-foot-cancel-but" href="AdminMainMaster.html">Cancel</a>
+
+                <a class="erp-foot-save" href="AdminMainMaster.html">Save</a>
+                </div>
+</div>
+</div>
+
+</body>
+</html>

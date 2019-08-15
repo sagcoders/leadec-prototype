@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LeadEC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+<style>
+    head
+    {
+        overflow: hidden;
+    }
+    body
+    {
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100vh;
+    }
+    }
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Courier New', Courier, monospace';
+    }
+    .row:before,.epm_hdr_sec:before
+    {
+        content: '';
+        display: table;
+    }
+    .row:after,.epm_hdr_sec:after
+    {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .epm_hdr_sec
+    {
+    height:55px;
+    border-bottom:2px solid #f29400;
+    display: block;
+    padding: 10px 30px;
+    background-color: #fff;
+    }
+    .epm_hdr_sec img
+    {
+
+    }
+    .pull-left
+    {float:left;}
+    .pull-right
+    {
+        float:right;
+    }
+    .erp-main-hdr-lbl
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #04378b;
+        font-size: 40px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        line-height: 35px;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .mar-top-15
+    {
+        margin-top:15px;
+        display: -webkit-box;
+    }
+    .erp-main-hdr-lbl span
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #f29400;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 25px;
+        margin: 0px 0px 0px 5px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: monospace;
+        letter-spacing: 0.7px;
+    }
+    .erp-login-out-icon
+    {background-color: #04378b;height: 25px;width: 25px;margin: 5px 0px 0px 0px;padding: 0px 9px;border-radius:50px !important;display: block;line-height: 20px;}
+    .erp-login-out-icon i
+    {
+        color:#fff;
+        font-size: 13px;
+    }
+    .erp-in-bdy-sec
+    {
+        position: relative;
+    padding: 20px 20px;
+    display: block;
+    }
+    .erp-lbl-hdr-s1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f0902b;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.erp-lbl-hdr-s1 span{
+    color: #004c8a;
+    font-size: 30px;
+}
+.erp-lbl-hdr-s1::before{
+    content: '';
+    position: absolute;
+    margin:0px auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    border-bottom:2px solid #ddd;
+    margin-top: 30px;
+}
+.erp-hdr-fixed
+{
+    position:fixed;
+    width:100%;
+    left:0px;
+    z-index: 999;
+    right:0px;
+    top:0px;
+}
+.erp-bdy-sec-top-to-bottom
+{
+    margin-top:55px;
+position: relative;
+    margin-bottom: 20px;
+}
+.erp-login-frm-par-con-s2 {
+    border: 1px solid #ddd;
+    border-radius: 50px !important;
+    padding: 5px 10px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+.erp-login-frm-par-con-s2 select{
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+    -webkit-appearance: none;
+    font-size: 15px;
+    color: #aaaaaa;
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+.erp-login-frm-par-con-s2 input {
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+    font-size: 15px;
+    color: #aaaaaa;
+    /* margin-bottom: 20px; */
+    border: none;
+    outline: none;
+}
+.erp-frm-cust-icon-s1 {
+    color: #b7b7b7;
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    font-size: 17px;
+}
+.erp-in-bdy-sec
+{
+    position: relative;
+    padding: 20px 20px;
+    display: block;
+}
+.erp-login-frm-par-con-s1{
+position: relative;
+}
+
+.erp-lbl-sec-frm-hdr-s1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #04378b;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 35px;
+    margin: 0px 0px 0px 0px;
+}
+.erp-lbl-sec-frm-hdr-s1 span
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f29400;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin: 0px 0px 0px 5px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.mar-top-30px
+{
+    margin-top:30px;
+    display: -webkit-box;
+}
+
+
+.erp-upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.erp-btn {
+  color: white;
+  background-color: #004c8a;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  z-index: 99999;
+  border-radius: 50px !important;
+  font-weight: 600;
+}
+.erp-btn:hover {
+    background-color: #f0902b;
+}
+.erp-upload-btn input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  display: block;
+  top: 0;
+  opacity: 0;
+}
+.erp-sign-in-but
+    {
+        border: none;
+    outline: none;
+    height: 30px;
+    color: #fff !important;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px auto;
+    display: block;
+    background-color: #04378b;
+    cursor: pointer;
+    border-radius: 20px;
+    line-height: 30px
+    }
+    .erp-sign-in-but:hover{
+        background-color: #f29400;
+        color: #fff;
+    }
+    
+    .erp-iframe-par-con-s1
+    {
+    position: relative;
+    margin:0px auto;
+    display: block;
+    width: 75%;
+    }
+    .erp-iframe-par-con-s1 iframe{
+        width:100%;
+        height: 500px;
+    
+    }
+    .erp-foot-cont
+    {
+        background-color: #efefef;
+        padding: 10px 10px;
+        display: block;
+        min-height: 45px;
+        border-bottom-left-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        width: 100%;
+    }
+    .erp-foot-cancel-but
+    {
+        border: none;
+        outline: none;
+        height: 25px;
+        color: #fff !important;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        float: right;
+        margin: 0px auto;
+        display: inline-block;
+        background-color: #b3b3b3;
+        cursor: pointer;
+        border-radius: 20px;
+        line-height: 25px;
+    }
+    .erp-foot-save
+    {
+        border: none;
+        outline: none;
+        height: 25px;
+        color: #fff !important;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0px auto;
+        float: right;
+        display: inline-block;
+        background-color: #04378b;
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 0px 10px 0px 10px;
+        line-height: 25px;
+    }
+    .erp-foot-cancel-but:hover
+    {
+background-color: gray;
+    }.erp-foot-save:hover
+    {
+background-color:#f29400;
+    }
+    .erp-chck-list-s1
+    {
+margin:0px;
+padding: 0px;        
+    }
+    .erp-chck-list-s1 li
+{float:left;display: block;list-style: none;margin: 0px 0px 0px 0px;}
+ .erp-chck-list-s1 li h1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 10px 40px 0px 0px;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.2px;
+ }
+ .erp-chck-list-s1 li h1 span{margin: 0px 10px 0px 0px;}
+.erp-table-editable
+{
+    table-layout: fixed;
+    width:100%;
+}
+.erp-table-editable th
+{
+    position:relative;
+    padding:7px 10px;
+    color:#5d5d5d;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border:1px solid #ddd;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.erp-table-editable td{
+    position:relative;
+    /* padding:7px 10px; */
+    color:#5d5d5d;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 0px 0px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border:1px solid #ddd;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.erp-table-editable td h2{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #04378b;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 35px;
+    margin: 0px 0px 0px 10px;
+}
+.erp-table-editable td h3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin: 0px 0px 0px 10px;
+    /* text-align: center; */
+    /* padding-top: 40px; */
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.erp-table-editable td input[type="text"]
+{white-space: nowrap;border: none;color: #504f4f;text-overflow: ellipsis;overflow: hidden;width: 100%;font-size: 15px;text-transform: CAPITALIZE;font-weight: 400;padding: 9px 5px;}
+
+.erp-table-editable td input[type="text"]:focus{
+    background-color: #f3f3f3;
+}
+
+.erp-lbl-hdr-s2{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f0902b;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.erp-lbl-hdr-s2 i
+{
+    MARGIN: 0PX 0PX 0PX 7PX;
+    font-size: 18px;
+}
+.erp-lbl-hdr-s2 span{
+    color: #004c8a;
+    font-size: 20px;
+    margin: 0px 0px 0px 6px;
+}
+.erp-lbl-hdr-s2::before{
+    content: '';
+    position: absolute;
+    margin:0px auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    border-bottom:2px solid #ddd;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+.erp-lbl-hdr-s3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #f0902b;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    float: right;
+    line-height: 30px;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+}
+.erp-lbl-hdr-s3 i
+{
+    MARGIN: 0PX 0PX 0PX 7PX;
+    font-size: 18px;
+}
+.erp-lbl-hdr-s3 span{
+    color: #004c8a;
+    font-size: 14px;
+    margin: 0px 0px 0px 6px;
+}
+.erp-lbl-hdr-s3::before{
+    content: '';
+    position: absolute;
+    margin:0px auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    border-bottom:2px solid #ddd;
+    margin-top: 30px;
+}
+
+
+</style>
+
+<div class="epm_hdr_sec erp-hdr-fixed">
+        <div class="row">
+        <div class="pull-left">
+            <h3 class="erp-main-hdr-lbl">LeadEC<span>Industrial Service</span></h3>
+        </div>
+        <div class="pull-right">
+        <a class="erp-login-out-icon" href="UserMainMaster.html" title="Log Out"><i class="fa fa-sign-out"></i></a>
+        
+        </div>
+        </div>
+        
+        </div>
+    </head>
+<body>
+      
+<div class="erp-in-bdy-sec erp-bdy-sec-top-to-bottom">
+        <h3 class="erp-lbl-hdr-s1"><span>C</span>heck <span>M</span>emo</h3>
+
+<div class="erp-login-frm-grp mar-top-30px">
+<div class="col-md-3">
+        <h3 class="erp-lbl-sec-frm-hdr-s1">Project Code</h3></div>
+        <div class="col-md-4"><div class="erp-login-frm-par-con-s2">
+                <i class="fa fa-file-text-o erp-frm-cust-icon-s1"></i><select>
+                        <option>-Choose Project Code-</option>
+                    </select>                
+                </div>
+</div>
+<div class="col-md-5">
+<h3 class="erp-lbl-hdr-s3" pull-right><i class="fa fa-calendar"></i><span>Feb 12th,</span>2019</h3>
+
+</div>
+
+
+
+</div>
+
+<div class="erp-login-frm-grp mar-top-15">
+        <div class="col-md-3">
+                <h3 class="erp-lbl-sec-frm-hdr-s1">Employee Name</h3></div>
+                <div class="col-md-4"><div class="erp-login-frm-par-con-s2">
+                        <i class="fa fa-user erp-frm-cust-icon-s1"></i>
+                        <input type="text" value="Enter Employee Name">
+                        </div>
+        </div>
+        
+        
+        
+        </div>
+
+        <div class="erp-login-frm-grp mar-top-15">
+                <div class="col-md-3">
+                        <h3 class="erp-lbl-sec-frm-hdr-s1">Employee Number</h3></div>
+                        <div class="col-md-4"><div class="erp-login-frm-par-con-s2">
+                                <i class="fa fa-user erp-frm-cust-icon-s1"></i>
+                                <input type="text" value="Enter Employee Number">
+                                </div>
+                </div>
+                
+                
+                
+                </div>
+      
+                <div class="erp-login-frm-grp mar-top-15">
+                        <div class="col-md-3">
+                                <h3 class="erp-lbl-sec-frm-hdr-s1">Site Name</h3></div>
+                                <div class="col-md-4"><div class="erp-login-frm-par-con-s2">
+                                        <i class="fa fa-file-text-o erp-frm-cust-icon-s1"></i>
+                                        <input type="text" value="Enter Site Name">
+                                        </div>
+                        </div>
+                        
+                        
+                        
+                        </div>
+
+
+
+                       
+
+
+                                <div class="mar-top-30px">
+
+<table class="erp-table-editable">
+<thead>
+    <tr>
+        <th style="width:5%;">S.no</th>
+        <th style="width:10%;">HSN Code</th>
+        <th style="width:15%;">Description</th>
+        <th style="width:10%;">UOM</th>
+        <th style="width:10%;">QTY</th>
+        <th style="width:10%;">Unit Price</th>
+        <th style="width:15%;">Total Unit Cost</th>
+        <th style="width:15;">Total Amount</th>
+        <th style="width:10%;">Remark</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+</tbody>
+</table>
+                                </div>
+
+</div>
+
+<div class="mar-top-15">
+        <div class="erp-foot-cont">
+                <a class="erp-foot-cancel-but" href="UserMainMaster.html">Cancel</a>
+                                <a class="erp-foot-save" href="UserMainMaster.html">Save</a>
+                </div>
+</div>
+
+</body>
+</html>
+</div>
